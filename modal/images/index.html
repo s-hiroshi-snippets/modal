@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Modal window</title>
+<meta name="description" content="DropDown sample">
+<meta name="keywords" content="dorpdown">
+<link rel="stylesheet" href="style.css" media="all">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="modal.js"></script>
+<style>
+    div {
+        margin: 2em;
+        background: #F0F0EE;
+    }
+</style>
+<script>
+jQuery(function($) {
+    $('div').modal();
+})
+</script>
+</head>
+<body>
+not modal link<br>
+<a class="modal" href="images/478x640.jpg">478x460px</a>
+<div>
+    modal link<br>
+    <a class="modal" href="images/478x640.jpg">478x460px</a>
+</div>
+<div style="height: 1200px;">
+    1200px div box
+</div>
+<div>
+    modal link<br>
+    <a class="modal" href="images/478x640.jpg">478x460px</a>
+</div>
+</body>
+</html>
